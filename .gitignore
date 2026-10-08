@@ -1,6 +1,30 @@
-# Secrets
+# Ambiente local
 .env
+.env.local
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.tmp
+
+# Logs e backups
+*.log
+*.bak
+*.backup
+*~.backup
+AGENTS.md.bak_*
+opencode.jsonc.bak_*
+
+# Arquivos sensíveis (não commit nunca)
 *.key
+*.pem
+*.p12
+*.pfx
+opencode.jsonc.local
+**/auth.json
 .opencode/auth.json
-**/opencode.json
-**/opencode.jsonc.local
+
+# OS
+Thumbs.db
