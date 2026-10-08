@@ -1,0 +1,6 @@
+# Secrets
+.env
+*.key
+.opencode/auth.json
+**/opencode.json
+**/opencode.jsonc.local
