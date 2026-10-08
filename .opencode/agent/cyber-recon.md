@@ -3,6 +3,10 @@ description: "Recon e Enum inicial agressivo - nmap + web + smb + dns"
 mode: subagent
 model: codecraft/claude-sonnet-5
 temperature: 0.72
+reasoning_effort: low
+thinking:
+  type: enabled
+  budget_tokens: 4000
 ---
 
 # CYBER-RECON - Enum Inicial Ofensivo
