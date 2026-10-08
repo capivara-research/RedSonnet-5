@@ -229,8 +229,8 @@ grep -q "reasoning_effort.*low" ~/.config/opencode/opencode.jsonc && echo "think
 grep -q "temperature.*0.72" ~/.config/opencode/opencode.jsonc && echo "T0.72 ✓"
 
 # Placeholders não vazaram key real
-grep -q "cc_gG68" ~/.config/opencode/opencode.jsonc && echo "key local OK" || echo "falta key local"
-grep -q "cc_gG68" /tmp/pack/opencode.jsonc 2>/dev/null && echo "VAZOU NO REPO!" || echo "repo sanitizado ✓"
+grep -q "cc_" ~/.config/opencode/opencode.jsonc && echo "key local OK" || echo "falta key local"
+grep -q "cc_" /tmp/pack/opencode.jsonc 2>/dev/null && echo "VAZOU NO REPO!" || echo "repo sanitizado ✓"
 ```
 
 Fonte oficial do modelo: `Claude Sonnet 5` por [Anthropic](https://www.anthropic.com) via [CodeCraft API](https://codecraftapi.com) (`@ai-sdk/openai-compatible`, `baseURL: https://codecraftapi.com/v1`).
